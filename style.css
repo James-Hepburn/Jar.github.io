@@ -1,0 +1,61 @@
+body {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    background-color: #FFDEE9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.envelope-container {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.envelope-container img {
+    width: 200px;
+}
+
+.envelope-container:active {
+    transform: scale(1.1);
+}
+
+#noteContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+#noteContainer.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.note p {
+    font-size: 18px;
+    color: #D63384;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: red;
+    margin-top: 10px;
+}

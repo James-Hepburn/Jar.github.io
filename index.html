@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Letter 💌</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Valentine's Day</h1>
+        
+        <div class="envelope-container" onclick="openNote()">
+            <img src="note.png" alt="Envelope" id="envelope">
+        </div>
+
+        <div id="noteContainer" class="hidden">
+            <div class="note">
+                <p id="loveNote"></p>
+                <button class="close-btn" onclick="closeNote()">❌</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
